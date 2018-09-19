@@ -16,6 +16,11 @@
 ```bash
 sudo apt-get install flex
 ```
+### Download this project
+
+```bash
+git clone git@github.com:guozetang/convertleet1337_english.git
+```
 
 ### Test steps
 
