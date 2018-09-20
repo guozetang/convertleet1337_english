@@ -1,12 +1,14 @@
 #include <stdio.h>
-
+#include <iostream>
+#include <string>
+#include <cstring>
 #include "main.h"
 
 extern int yylex();
 extern int yylineno;
 extern char *yytext;
 
-const static char letter[] = "0ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+const static char letter[] = "0ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 int main(void)
 {
@@ -22,13 +24,7 @@ int main(void)
 		case BLANK:
 			std::cout << " ";
 			break;
-		case DIGIT:
-		case ELLIPSIS:
-		case SYMBOL:
-		case NOCHANGE:
-			std::cout << yytext;
-			break;
-		case CODE1337_A ... CODE1337_LOWER_Z:
+		case CODE1337_A ... CODE1337_Z:
 			std::cout << letter[ntoken];
 			break;
 		default:
