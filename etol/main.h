@@ -1,3 +1,6 @@
+#include <iostream>
+#include <string>
+#include <cstring>
 
 #define CODE1337_A 1
 #define CODE1337_B 2
@@ -29,6 +32,40 @@
 #define CODE1337_Y 25
 #define CODE1337_Z 26
 
+// lower case
+#define CODE1337_LOWER_A 27
+#define CODE1337_LOWER_B 28
+#define CODE1337_LOWER_C 29
+#define CODE1337_LOWER_D 30
+#define CODE1337_LOWER_E 31
+#define CODE1337_LOWER_F 32
+#define CODE1337_LOWER_G 33
+
+#define CODE1337_LOWER_H 34
+#define CODE1337_LOWER_I 35
+#define CODE1337_LOWER_J 36
+#define CODE1337_LOWER_K 37
+#define CODE1337_LOWER_L 38
+#define CODE1337_LOWER_M 39
+#define CODE1337_LOWER_N 40
+
+#define CODE1337_LOWER_O 41
+#define CODE1337_LOWER_P 42
+#define CODE1337_LOWER_Q 43
+#define CODE1337_LOWER_R 44
+#define CODE1337_LOWER_S 45
+#define CODE1337_LOWER_T 46
+
+#define CODE1337_LOWER_U 47
+#define CODE1337_LOWER_V 48
+#define CODE1337_LOWER_W 49
+#define CODE1337_LOWER_X 50
+#define CODE1337_LOWER_Y 51
+#define CODE1337_LOWER_Z 52
+
 #define DIGIT 98
 #define NEWLINE 99
 #define BLANK 100
+#define ELLIPSIS 101
+#define SYMBOL 104
+#define NOCHANGE 200

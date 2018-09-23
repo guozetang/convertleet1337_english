@@ -32,10 +32,40 @@ W		return CODE1337_W;
 X		return CODE1337_X;
 Y		return CODE1337_Y;
 Z		return CODE1337_Z;
-
+a	 	return CODE1337_LOWER_A;
+b		return CODE1337_LOWER_B;
+c		return CODE1337_LOWER_C;
+d		return CODE1337_LOWER_D;
+e		return CODE1337_LOWER_E;
+f		return CODE1337_LOWER_F;
+g		return CODE1337_LOWER_G;
+h		return CODE1337_LOWER_H;
+i		return CODE1337_LOWER_I;
+j		return CODE1337_LOWER_J;
+k		return CODE1337_LOWER_K;
+l		return CODE1337_LOWER_L;
+m		return CODE1337_LOWER_M;
+n		return CODE1337_LOWER_N;
+o		return CODE1337_LOWER_O;
+p		return CODE1337_LOWER_P;
+q		return CODE1337_LOWER_Q;
+r		return CODE1337_LOWER_R;
+s		return CODE1337_LOWER_S;
+t		return CODE1337_LOWER_T;
+u		return CODE1337_LOWER_U;
+v		return CODE1337_LOWER_V;
+w		return CODE1337_LOWER_W;
+x		return CODE1337_LOWER_X;
+y		return CODE1337_LOWER_Y;
+z		return CODE1337_LOWER_Z;
+[0-9]*				return DIGIT;
 " "      	  		return BLANK;
+"\t"      	  		return BLANK;
+"..."				return ELLIPSIS;
+['/!:,!-\.?";()—]*	return SYMBOL;
+[#“”<>$\\@\[\]]*	return SYMBOL;
 [ \t\n]		  		return NEWLINE;
-.			  		{}
+.			  		return NOCHANGE;
 %%
 
 int yywrap(void)
